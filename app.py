@@ -56,11 +56,11 @@ if __name__ == "__main__":
         message = {
             "event": "user_signup",
             "user_id": 12345,  # You can make this dynamic if needed
-            "timestamp": datetime.utcnow().isoformat() + "Z"
+            "timestamp": (datetime.utcnow() + timedelta(hours=1)).isoformat() + "Z"
         }
         
         # Send the message to the queue
         send_message_to_queue(queue_name, message)
         
         # Wait for 30 seconds before sending the next message
-        time.sleep(30)
+        # time.sleep(30)
