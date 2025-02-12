@@ -55,7 +55,7 @@ if __name__ == "__main__":
         # Create a new message with a dynamic timestamp
         message = {
             "event": "user_signup",
-            "user_id": 12345,  # You can make this dynamic if needed
+            "user_id": 123456,  # You can make this dynamic if needed
             "timestamp": (datetime.utcnow() + timedelta(hours=1)).isoformat() + "Z"
         }
         
